@@ -1,4 +1,4 @@
-*** Project Deployment ***
+***Project Deployment***
 ```
 php artisan migrate
 ```
