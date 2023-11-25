@@ -19,14 +19,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('', function () {
-    /**
-     * @var TelegraphBot $bot
-     * @var TelegraphChat $chat
-     */
-    $bot = TelegraphBot::query()->find(1);
-
-    $bot->registerCommands([
-        'today' => 'Праздники сегодня',
-    ])->send();
-});
+//Route::get('', function () {
+//    /**
+//     * @var TelegraphBot $bot
+//     * @var TelegraphChat $chat
+//     */
+//    $bot = TelegraphBot::query()->find(1);
+//
+//    $bot->registerCommands([
+//        'today' => 'Праздники сегодня',
+//    ])->send();
+//});

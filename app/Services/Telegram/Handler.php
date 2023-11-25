@@ -21,6 +21,13 @@ class Handler extends WebhookHandler
         $this->holidays = \App\Services\Holidays\Handler::getHolidays();
     }
 
+    public function start() : void
+    {
+        $this->bot->registerCommands([
+            'today' => 'Праздники сегодня',
+        ])->send();
+    }
+
     public function info() : void
     {
         $index = $this->data->get('index');
